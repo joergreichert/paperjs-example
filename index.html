@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-full.min.js"></script>
+        <script type="text/javascript" src="./index.js"></script>
+        <script type="text/javascript">
+	        window.onload = function() {
+    		    const canvas = document.getElementById('myCanvas');
+                paper.setup(canvas);
+                myRectangle(paper);
+                paper.view.draw();
+            }
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.min.css" />
+    </head>
+    <body>
+        <canvas id="myCanvas" resize="resize" />
+    </body>
+</html>
